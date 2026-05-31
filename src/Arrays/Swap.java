@@ -1,6 +1,5 @@
-package collections.Arrays;
+package Arrays;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Swap {

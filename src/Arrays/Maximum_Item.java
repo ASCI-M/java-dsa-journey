@@ -1,4 +1,4 @@
-package collections.Arrays;
+package Arrays;
 
 public class Maximum_Item {
     public static void main(String[] args) {

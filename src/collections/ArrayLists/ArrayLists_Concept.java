@@ -1,5 +1,4 @@
 package collections.ArrayLists;
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class ArrayLists_Concept {
