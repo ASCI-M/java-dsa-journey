@@ -1,4 +1,5 @@
-package Generics_Concepts_Using_ArrayLists;
+package LambdaFunctions;
+
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
@@ -15,9 +16,9 @@ public class LambdaFunctions {
 //            //here item is every single element in arr
 //            System.out.println(item * 2);
 //        });
-                    //OR
+        //OR
         //Storing the lambda function in a variable
-        Consumer<Integer> fun = item ->  System.out.println(item * 2);
+        Consumer<Integer> fun = item -> System.out.println(item * 2);
         //using the variable of interface type as argument for forEach
         arr.forEach(fun);
 
@@ -36,15 +37,16 @@ public class LambdaFunctions {
         System.out.println(myCalc.operate(5, 3, subtraction));
 
         //without using variable or helper method
-        System.out.println(((Operation)(a, b) -> a + b).operation(5, 3));
+        System.out.println(((Operation) (a, b) -> a + b).operation(5, 3));
     }
 
 
-    private int operate (int a, int b, Operation op){
+    private int operate(int a, int b, Operation op) {
         return op.operation(a, b);
     }
 
+
+
+
 }
-interface Operation{
-    int operation(int a, int b);
-}
+
