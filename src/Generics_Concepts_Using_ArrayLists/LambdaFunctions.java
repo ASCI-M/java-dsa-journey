@@ -18,7 +18,6 @@ public class LambdaFunctions {
                     //OR
         //Storing the lambda function in a variable
         Consumer<Integer> fun = item ->  System.out.println(item * 2);
-        arr.forEach(fun);
 
         //storing various operation code in variable of type interface operation
         //works as body of abstract method
