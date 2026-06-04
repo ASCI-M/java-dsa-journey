@@ -1,4 +1,4 @@
-package Generics_Concepts_Using_ArrayLists.Generic_Interface;
+package genericsconceptsusingarraylists.genericinterface;
 
 public class Main implements GenericInterface<Integer> {
     @Override

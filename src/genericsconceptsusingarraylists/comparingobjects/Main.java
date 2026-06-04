@@ -1,4 +1,4 @@
-package Generics_Concepts_Using_ArrayLists.Comparing_Objects;
+package genericsconceptsusingarraylists.comparingobjects;
 import java.util.*;
 public class Main {
     public static void main(String[] args) {

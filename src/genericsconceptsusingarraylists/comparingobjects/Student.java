@@ -1,4 +1,4 @@
-package Generics_Concepts_Using_ArrayLists.Comparing_Objects;
+package genericsconceptsusingarraylists.comparingobjects;
 /*
 Here interface uses generics too, we passed Student type on which
 this class objects should be comparable

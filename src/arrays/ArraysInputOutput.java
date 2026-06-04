@@ -1,9 +1,9 @@
-package Arrays;
+package arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Arrays_Input_Output {
+public class ArraysInputOutput {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 //        // array of primitives

@@ -1,6 +1,6 @@
-package Arrays;
+package arrays;
 
-public class Arrays_Concept {
+public class ArraysConcept {
     public static void main(String[] args) {
         // array to store a roll number
         int a = 19;

@@ -1,8 +1,12 @@
-package Generics_Concepts_Using_ArrayLists;
+package genericsconceptsusingarraylists;
 
 import java.util.Arrays;
+import java.util.List;
 
-public class Custom_Generic_ArrayList<T> {
+/*
+    Here we restrict T using wildcards
+ */
+public class CustomGenericWithWildcardArraylist<T extends Number> {
 
     //applying encapsulation for non-direct accessing
     private Object[] data;
@@ -11,7 +15,7 @@ public class Custom_Generic_ArrayList<T> {
     //size will be tracking how many data inserted
     private int size = 0;// working as index value
 
-    public Custom_Generic_ArrayList() {
+    public CustomGenericWithWildcardArraylist() {
         /*
         when private T[] data then -> this.data = new T[DEFAULT_SIZE] is error due to type erasure
         At compile time, Java erases all generic type information. So at runtime, T doesn't exist —
@@ -21,6 +25,20 @@ public class Custom_Generic_ArrayList<T> {
          */
         //so now we use Object type in line 8 to define the data arraylist:
         this.data = new Object[DEFAULT_SIZE];
+    }
+    /*
+    Here we can only pass Number type and not its subclasses
+     */
+    public void getList(List<Number> list, int num){//declaring int num just for the sake of no overloading error
+        //doing something
+    }
+    /*
+    here this given wildcard is used to pass a number as well as its subclasses
+    as ? here is actually the type that's passed and anything that extends
+    number here can be passed to it
+     */
+    public void getList(List<? extends Number> list){
+
     }
 
     public void add(T value) {
@@ -87,7 +105,7 @@ public class Custom_Generic_ArrayList<T> {
 //        list.isEmpty();
 
         //***Custom Generic ArrayList
-        Custom_Generic_ArrayList<Integer> list = new Custom_Generic_ArrayList<>();
+        CustomGenericWithWildcardArraylist<Integer> list = new CustomGenericWithWildcardArraylist<>();
         //called constructor hence now its default size is 10 initially
 
         //operations on custom arraylist using, our created method
@@ -99,17 +117,12 @@ public class Custom_Generic_ArrayList<T> {
         }
         System.out.println(list);
 
-        Custom_Generic_ArrayList<String> list2 = new Custom_Generic_ArrayList<>();
+        /*
+         here error as String is not a Number, thus using Wildcards with generics we restrict the type of arrayList
+         */
+        //Custom_GenericWithWildcard_Arraylist<String> list2 = new Custom_GenericWithWildcard_Arraylist<>();
 
-        list2.add("modit");
-        list2.add("hello");
 
-
-        for (int i = 0; i < 15; i++) {
-            list2.add("String" + i);
-        }
-
-        System.out.println(list2 );
 
 
     }
