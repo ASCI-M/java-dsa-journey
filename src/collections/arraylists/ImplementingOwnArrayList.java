@@ -2,7 +2,7 @@ package collections.arraylists;
 
 import java.util.Arrays;
 
-public class CustomArrayList {
+public class ImplementingOwnArrayList {
 
     //applying encapsulation for non-direct accessing
     private int[] data;
@@ -11,7 +11,7 @@ public class CustomArrayList {
     //size will be tracking how many data inserted
     private int size = 0;// working as index value
 
-    public CustomArrayList() {
+    public ImplementingOwnArrayList() {
         this.data = new int[DEFAULT_SIZE];
     }
 
@@ -83,7 +83,7 @@ public class CustomArrayList {
 //        list.isEmpty();
 
         //***Custom ArrayList
-        CustomArrayList list = new CustomArrayList();//called constructor hence now its default size is 10 initially
+        ImplementingOwnArrayList list = new ImplementingOwnArrayList();//called constructor hence now its default size is 10 initially
 
         //operations on custom arraylist using, our created method
         list.add(3);
