@@ -1,6 +1,4 @@
-package problems.arrays;
-
-import com.sun.security.jgss.GSSUtil;
+package problems.arrays.easy;
 
 public class NumberThatAppearOnceInDuplicates {
     public static void main(String[] args) {

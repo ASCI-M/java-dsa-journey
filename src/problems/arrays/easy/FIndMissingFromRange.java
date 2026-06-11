@@ -1,4 +1,4 @@
-package problems.arrays;
+package problems.arrays.easy;
 
 public class FIndMissingFromRange {
     public static void main(String[] args) {

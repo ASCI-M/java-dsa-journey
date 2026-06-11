@@ -1,4 +1,4 @@
-package problems.arrays;
+package problems.arrays.easy;
 
 public class LongestSubarraywithgivenSumKPositives {
     public static void main(String[] args) {

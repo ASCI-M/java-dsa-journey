@@ -1,6 +1,4 @@
-package problems.arrays;
-
-import java.util.Arrays;
+package problems.arrays.easy;
 
 public class LinearSearch {
 

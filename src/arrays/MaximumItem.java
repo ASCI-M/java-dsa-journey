@@ -16,6 +16,7 @@ public class MaximumItem {
         }
         return maximum;
     }
+
     static int maxRange(int[] arr, int lowerBound, int upperBound){
 
         if(lowerBound>upperBound) return -1;
